@@ -1,8 +1,7 @@
 <% inner_box_styles = "w-full p-8 bg-gray-800" %>
 <% default_description = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu" %>
 <% room_description = defined?(room) ? room.description : default_description %>
-<%# room_buttons = defined?(room) ? room.buttons : [] %>
-<% room_buttons = [] %>
+<% room_buttons = defined?(room.buttons) ? room.buttons : [] %>
 
 <%= audio_tag "raw/deadend.m4a", loop: true %>
 
