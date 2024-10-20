@@ -2,14 +2,17 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 
-window.addEventListener("DOMContentLoaded", () => {
-  const audio_element = document.querySelector("audio")
-  const button = document.querySelector("button")
+window.addEventListener("turbo:submit-start", (event) => {
+  console.log("before submit!");
 
-  // if (button) { // not null
-  //   button.addEventListener("click", (event) => {
-  //     event.preventDefault();
-  //     audio_element.play();
-  //   });
-  // };
+  const audio_element = document.querySelector("audio")
+  audio_element.pause();
+  audio_element.currentTime = 0;
+});
+
+window.addEventListener("turbo:frame-render", async (event) => {
+  console.log("after render!");
+
+  const audio_element = document.querySelector("audio")
+  audio_element.play();
 });
