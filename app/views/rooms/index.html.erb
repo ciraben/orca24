@@ -1,3 +1,3 @@
-<% @rooms.each do |room| %>
-  <%= render "room_card" %>
+<%= @rooms.each do |room| %>
+  <%= render "room_card", room: room %>
 <% end %>
