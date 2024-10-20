@@ -7,19 +7,18 @@
 
 <div class="flex justify-center bg-gray-900 m-8 p-8 w-3/4">
   <div class="flex flex-col justify-center items-center w-5/6 gap-12 text-xl">
-      <div class="description <%= inner_box_styles %>">
-        <p><%= room_description %></p>
-      </div>
+    <div class="description <%= inner_box_styles %>">
+      <p><%= room_description %></p>
+    </div>
 
-      <div class="option-buttons <%= inner_box_styles %>">
-        <div class="flex flex-col gap-2">
-          <% buttons.each do %>
-            <%= render "shared/button",
-              text: button.label
-            %>
-          <% end %>
-        </div>
-
+    <div class="option-buttons <%= inner_box_styles %>">
+      <div class="flex flex-col gap-2">
+        <% room_buttons.each do |room_button| %>
+          <%= render "shared/button",
+            text: room_button.label
+          %>
+        <% end %>
       </div>
+    </div>
   </div>
 </div>

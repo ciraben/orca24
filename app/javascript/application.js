@@ -6,8 +6,10 @@ window.addEventListener("DOMContentLoaded", () => {
   const audio_element = document.querySelector("audio")
   const button = document.querySelector("button")
 
-  button.addEventListener("click", (event) => {
-    event.preventDefault();
-    audio_element.play();
-  });
+  if (button) { // not null
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      audio_element.play();
+    });
+  };
 });
