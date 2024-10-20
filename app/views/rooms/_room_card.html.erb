@@ -13,10 +13,13 @@
 
     <div class="option-buttons <%= inner_box_styles %>">
       <div class="flex flex-col gap-2">
-        <% room_buttons.each do |room_button| %>
-          <%= render "shared/button",
-            text: room_button.label
+        <% room_buttons.each do |button| %>
+          <%= form_for button,
+            url: "/rooms/#{button.destination.id}",
+            method: :get do |form|
           %>
+            <%= render "shared/button", text: button.label %>
+          <% end %>
         <% end %>
       </div>
     </div>
