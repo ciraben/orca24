@@ -1,3 +1,3 @@
 class Room < ApplicationRecord
-  has_many: :buttons
+  has_many :buttons
 end
