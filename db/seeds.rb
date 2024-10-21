@@ -8,24 +8,54 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 room_data = {
-  "qwench (phone)" => "Qwench!",
-  "street outside qwench - thanku!" => "sure is quiet out here...",
-  "intro" => "This is a cute game i made for orca jam 2024."
+  "intro" => "this is a walk i took for orca jam 2024.",
+  "qwench (bare) - this!" => "qwench!",
+  "qwench bathroom" => "bathroom go brr",
+  "street outside qwench - thanku!" => "looks like it's raining...",
+  "dead-end garage" => "",
+  "deadend" => "",
+  "duke saloon" => "",
+  "store st near vv" => "",
+  "vv inside" => "",
+  "vv to pinhalla" => "",
+  "pinhalla 1" => "",
+  "leaving pinhalla" => "",
+  "fisgard idling" => "",
+  "fantan is closed" => "",
+  "fantan entrance closed" => "",
+  "leaving fantan to govt" => "",
+  "from govt fisgard to square" => "",
+  "centennial square idle" => "",
+  "check out ghost tour" => "",
+  "visit fountain" => "",
+  "at fount" => "",
+  "walk to playhouse" => "",
+  "entering playhouse" => "",
+  "leave playhouse to market" => "",
+  "cutting thru market" => "",
+  "johnson after market" => "",
+  "enter lush alley" => "",
+  "lush alley" => "",
+  "alley thru timewarp" => "",
+  "wharf by bridge" => "",
+  "down to bridge" => "",
+  "under bridge" => "",
+  "home" => ""
 }
 
 button_data = {
+  "start" => [
+    "intro",
+    "qwench (bare) - this!"
+  ],
   "go outside" => [
-    "qwench (phone)",
+    "qwench (bare) - this!",
     "street outside qwench - thanku!"
   ],
   "go back inside" => [
     "street outside qwench - thanku!",
-    "qwench (phone)"
+    "qwench (bare) - this!"
   ],
-  "start" => [
-    "intro",
-    "qwench (phone)"
-  ]
 }
 
 room_data.each do |label, description|
