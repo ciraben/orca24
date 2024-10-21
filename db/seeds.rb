@@ -48,13 +48,132 @@ button_data = {
     "intro",
     "qwench (bare) - this!"
   ],
+
+  "find a quiet corner" => [
+    "qwench (bare) - this!",
+    "qwench bathroom"
+  ],
   "go outside" => [
     "qwench (bare) - this!",
     "street outside qwench - thanku!"
   ],
+
   "go back inside" => [
     "street outside qwench - thanku!",
     "qwench (bare) - this!"
+  ],
+  "head north" => [
+    "street outside qwench - thanku!",
+    "dead-end garage"
+  ],
+  "head south" => [
+    "street outside qwench - thanku!",
+    "duke saloon"
+  ],
+
+  "investigate dead-end" => [
+    "dead-end garage",
+    "deadend"
+  ],
+  "turn back" => [
+    "dead-end garage",
+    "street outside qwench - thanku!"
+  ],
+
+  "nevermind..." => [
+    "deadend",
+    "street outside qwench - thanku!"
+  ],
+
+  "what else is there this way?" => [
+    "duke saloon",
+    "store st near vv"
+  ],
+  "what about back up the street?" => [
+    "duke saloon",
+    "street outside qwench - thanku!"
+  ],
+
+  "check out the general store" => [
+    "store st near vv",
+    "vv inside"
+  ],
+  "check out the flashy bar" => [
+    "store st near vv",
+    "pinhalla 1"
+  ],
+
+  "all done thrifting" => [
+    "vv inside",
+    "store st near vv"
+  ],
+
+  "alright, time to go" => [
+    "pinhalla 1",
+    "leaving pinhalla"
+  ],
+
+  "explore the enticing alley" => [
+    "leaving pinhalla",
+    "fantan is closed"
+  ],
+  "better keep moving then" => [
+    "fantan is closed",
+    "leaving fantan to govt"
+  ],
+
+  "check what's going on in the square..." => [
+    "leaving fantan to govt",
+    "centennial square idle"
+  ],
+
+  "investigate the group huddled to the south" => [
+    "centennial square idle",
+    "check out ghost tour"
+  ],
+  "check out the fountain" => [
+    "centennial square idle",
+    "at fount"
+  ],
+  "take a closer look at the playhouse" => [
+    "centennial square idle",
+    "walk to playhouse"
+  ],
+
+  "better not linger too long" => [
+    "check out ghost tour",
+    "walk to playhouse"
+  ],
+  "head down to the glowing building" => [
+    "at fount",
+    "walk to playhouse"
+  ],
+
+  "go inside?" => [
+    "walk to playhouse",
+    "entering playhouse"
+  ],
+  "keep heading west" => [
+    "walk to playhouse",
+    "cutting thru market"
+  ],
+  "leave playhouse to market" => [
+    "leave playhouse to market",
+    "enter lush alley"
+  ],
+
+  "seek shelter in the alley" => [
+    "cutting thru market",
+    "enter lush alley",
+  ],
+  "get shelter in the alley" => [
+    "cutting thru market",
+    "enter lush alley",
+  ],
+
+  "you think you hear something..." => [
+    "enter lush alley",
+    "alley thru timewarp"
   ],
 }
 
