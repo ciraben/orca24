@@ -12,35 +12,34 @@ room_data = {
   "qwench (bare) - this!" => "qwench!",
   "qwench bathroom" => "bathroom go brr",
   "street outside qwench - thanku!" => "looks like it's raining...",
-  "dead-end garage" => "",
-  "deadend" => "",
-  "duke saloon" => "",
-  "store st near vv" => "",
-  "vv inside" => "",
-  "vv to pinhalla" => "",
-  "pinhalla 1" => "",
-  "leaving pinhalla" => "",
-  "fisgard idling" => "",
-  "fantan is closed" => "",
-  "fantan entrance closed" => "",
-  "leaving fantan to govt" => "",
-  "from govt fisgard to square" => "",
-  "centennial square idle" => "",
-  "check out ghost tour" => "",
-  "visit fountain" => "",
-  "at fount" => "",
-  "walk to playhouse" => "",
-  "entering playhouse" => "",
-  "leave playhouse to market" => "",
-  "cutting thru market" => "",
-  "johnson after market" => "",
-  "enter lush alley" => "",
-  "lush alley" => "",
-  "alley thru timewarp" => "",
-  "wharf by bridge" => "",
-  "down to bridge" => "",
-  "under bridge" => "",
-  "home" => ""
+  "dead-end garage" => "nice tunes..",
+  "deadend" => "hmm, nothing here",
+  "duke saloon" => ".",
+  "store st near vv" => ".",
+  "vv inside" => ".",
+  "vv to pinhalla" => ".",
+  "pinhalla 1" => ".",
+  "leaving pinhalla" => ".",
+  # "fisgard idling" => ".",
+  "fantan is closed" => ".",
+  # "fantan entrance closed" => ".",
+  "leaving fantan to govt" => ".",
+  # "from govt fisgard to square" => ".",
+  "centennial square idle" => ".",
+  "check out ghost tour" => ".",
+  "visit fountain" => ".",
+  "walk to playhouse" => ".",
+  "entering playhouse" => ".",
+  "leave playhouse to market" => ".",
+  "cutting thru market" => ".",
+  # "johnson after market" => ".",
+  "enter lush alley" => ".",
+  # "lush alley" => ".",
+  "alley thru timewarp" => ".",
+  # "wharf by bridge" => ".",
+  # "down to bridge" => ".",
+  # "under bridge" => ".",
+  "home" => "the end! after that i biked home"
 }
 
 button_data = {
@@ -58,15 +57,20 @@ button_data = {
     "street outside qwench - thanku!"
   ],
 
+  "okay, back to the fray" => [
+    "qwench bathroom",
+    "qwench (bare) - this!"
+  ],
+
   "go back inside" => [
     "street outside qwench - thanku!",
     "qwench (bare) - this!"
   ],
-  "head north" => [
+  "head north!" => [
     "street outside qwench - thanku!",
     "dead-end garage"
   ],
-  "head south" => [
+  "head south!" => [
     "street outside qwench - thanku!",
     "duke saloon"
   ],
@@ -105,7 +109,11 @@ button_data = {
 
   "all done thrifting" => [
     "vv inside",
-    "store st near vv"
+    "vv to pinhalla"
+  ],
+  "stay and vibe" => [
+    "vv to pinhalla",
+    "pinhalla 1"
   ],
 
   "alright, time to go" => [
@@ -133,7 +141,7 @@ button_data = {
   ],
   "check out the fountain" => [
     "centennial square idle",
-    "at fount"
+    "visit fountain"
   ],
   "take a closer look at the playhouse" => [
     "centennial square idle",
@@ -145,7 +153,7 @@ button_data = {
     "walk to playhouse"
   ],
   "head down to the glowing building" => [
-    "at fount",
+    "visit fountain",
     "walk to playhouse"
   ],
 
@@ -153,20 +161,20 @@ button_data = {
     "walk to playhouse",
     "entering playhouse"
   ],
-  "keep heading west" => [
-    "walk to playhouse",
-    "cutting thru market"
+  "better leave before security gets annoyed" => [
+    "entering playhouse",
+    "leave playhouse to market"
   ],
-  "leave playhouse to market" => [
+  "find shelter in the alley" => [
     "leave playhouse to market",
     "enter lush alley"
   ],
 
-  "seek shelter in the alley" => [
-    "cutting thru market",
-    "enter lush alley",
+  "keep heading west" => [
+    "walk to playhouse",
+    "cutting thru market"
   ],
-  "get shelter in the alley" => [
+  "seek shelter in the alley" => [
     "cutting thru market",
     "enter lush alley",
   ],
@@ -175,6 +183,11 @@ button_data = {
     "enter lush alley",
     "alley thru timewarp"
   ],
+
+  "..." => [
+    "alley thru timewarp",
+    "home"
+  ]
 }
 
 room_data.each do |label, description|
